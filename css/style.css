@@ -3,7 +3,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-h1:before {
+h1#coltest:before {
   content: "ExtraSmall "; }
 
 .container {
@@ -186,7 +186,7 @@ h1:before {
   padding-right: 0.83333%; }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  h1:before {
+  h1#coltest:before {
     content: "Small "; }
 
   .container {
@@ -342,7 +342,7 @@ h1:before {
     padding-left: 0.83333%;
     padding-right: 0.83333%; } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  h1:before {
+  h1#coltest:before {
     content: "Medium "; }
 
   .container {
@@ -570,7 +570,7 @@ h1:before {
     padding-left: 0.83333%;
     padding-right: 0.83333%; } }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  h1:before {
+  h1#coltest:before {
     content: "Large "; }
 
   .container {
@@ -870,7 +870,7 @@ h1:before {
     padding-left: 0.83333%;
     padding-right: 0.83333%; } }
 @media screen and (min-width: 1200px) {
-  h1:before {
+  h1#coltest:before {
     content: "ExtraLarge "; }
 
   .container {
