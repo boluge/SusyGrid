@@ -1,0 +1,19 @@
+{
+  "name": "susyGrid",
+  "version": "1.0.0",
+  "authors": [
+    "Stephane Deluce <boluge@ymail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.1.3"
+  }
+}
