@@ -68,22 +68,8 @@ h1
 	.container
 		+container(95%)
 
-	// @for $i from 1 through $columns
-	// 	.col-md-#{$i}
-	// 		+span($columns of $columns)
-	// 		+clearfix
-
-	// @for $i from 1 through $columns
-	// 	.col-md-#{$i}
-	// 		+span($columns  of $columns)
-	// 		+clearfix
-
 	@for $i from 1 through $columns
-		.col-md-#{$i}
-			+span($i of $columns)
-
-	@for $i from 1 through $columns
-		.col-lg-#{$i}
+		.col-xs-#{$i}
 			+span($i of $columns)
 
 	@for $i from 1 through $columns
@@ -102,7 +88,11 @@ h1
 		+container(720px)
 
 	@for $i from 1 through $columns
-		.col-lg-#{$i}
+		.col-xs-#{$i}
+			+span($i of $columns)
+
+	@for $i from 1 through $columns
+		.col-sm-#{$i}
 			+span($i of $columns)
 
 	@for $i from 1 through $columns
@@ -122,20 +112,17 @@ h1
 	.container
 		+container(960px)
 
-	// @for $i from 1 through $columns
-	// 	.col-xs-#{$i}
-	// 		+span($columns of $columns)
-	// 		+clearfix
+	@for $i from 1 through $columns
+		.col-xs-#{$i}
+			+span($i of $columns)
 
-	// @for $i from 1 through $columns
-	// 	.col-sm-#{$i}
-	// 		+span($columns of $columns)
-	// 		+clearfix
+	@for $i from 1 through $columns
+		.col-sm-#{$i}
+			+span($i of $columns)
 
-	// @for $i from 1 through $columns
-	// 	.col-md-#{$i}
-	// 		+span($columns of $columns)
-	// 		+clearfix
+	@for $i from 1 through $columns
+		.col-md-#{$i}
+			+span($i of $columns)
 
 	@for $i from 1 through $columns
 		.col-lg-#{$i}
@@ -150,20 +137,17 @@ h1
 	.container
 		+container(1140px)
 
-	// @for $i from 1 through $columns
-	// 	.col-xs-#{$i}
-	// 		+span($columns of $columns)
-	// 		+clearfix
+	@for $i from 1 through $columns
+		.col-xs-#{$i}
+			+span($i of $columns)
 
-	// @for $i from 1 through $columns
-	// 	.col-sm-#{$i}
-	// 		+span($columns of $columns)
-	// 		+clearfix
+	@for $i from 1 through $columns
+		.col-sm-#{$i}
+			+span($i of $columns)
 
-	// @for $i from 1 through $columns
-	// 	.col-md-#{$i}
-	// 		+span($columns of $columns)
-	// 		+clearfix
+	@for $i from 1 through $columns
+		.col-md-#{$i}
+			+span($i of $columns)
 
 	@for $i from 1 through $columns
 		.col-lg-#{$i}
