@@ -40,8 +40,10 @@ $shorthand: 12 1/4 fluid float inside
 
 // $ExtraSmall
 // -------------------------------------//
-body
-	background: red
+
+h1
+	&:before
+		content: 'ExtraSmall '
 
 .container
 	+container(95%)
@@ -59,16 +61,30 @@ body
 
 // $Small
 // -------------------------------------//
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
-	body
-		background: blue
+@media screen and (min-width: $screen-xs-min) and (max-width: $screen-xs-max)
+	h1
+		&:before
+			content: 'Small '
 	.container
-		+container(720px)
+		+container(95%)
+
+	// @for $i from 1 through $columns
+	// 	.col-md-#{$i}
+	// 		+span($columns of $columns)
+	// 		+clearfix
+
+	// @for $i from 1 through $columns
+	// 	.col-md-#{$i}
+	// 		+span($columns  of $columns)
+	// 		+clearfix
 
 	@for $i from 1 through $columns
-		.col-md-#{$i}, .col-lg-#{$i}
-			+span($columns of $columns)
-			+clearfix
+		.col-md-#{$i}
+			+span($i of $columns)
+
+	@for $i from 1 through $columns
+		.col-lg-#{$i}
+			+span($i of $columns)
 
 	@for $i from 1 through $columns
 		.col-sm-#{$i}
@@ -78,16 +94,16 @@ body
 
 // $Medium
 // -------------------------------------//
-@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max)
-	body
-		background: green
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
+	h1
+		&:before
+			content: 'Medium '
 	.container
-		+container(960px)
+		+container(720px)
 
 	@for $i from 1 through $columns
 		.col-lg-#{$i}
-			+span($columns of $columns)
-			+clearfix
+			+span($i of $columns)
 
 	@for $i from 1 through $columns
 		.col-md-#{$i}
@@ -99,13 +115,55 @@ body
 
 // $Large
 // -------------------------------------//
-@media screen and (min-width: $screen-lg-min)
+@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max)
+	h1
+		&:before
+			content: 'Large '
 	.container
-		+container(1144px)
+		+container(960px)
+
+	// @for $i from 1 through $columns
+	// 	.col-xs-#{$i}
+	// 		+span($columns of $columns)
+	// 		+clearfix
+
+	// @for $i from 1 through $columns
+	// 	.col-sm-#{$i}
+	// 		+span($columns of $columns)
+	// 		+clearfix
+
+	// @for $i from 1 through $columns
+	// 	.col-md-#{$i}
+	// 		+span($columns of $columns)
+	// 		+clearfix
 
 	@for $i from 1 through $columns
-		.col-md-#{$i}
+		.col-lg-#{$i}
 			+span($i of $columns)
+
+// $ExtraLarge
+// -------------------------------------//
+@media screen and (min-width: $screen-lg-min)
+	h1
+		&:before
+			content: 'ExtraLarge '
+	.container
+		+container(1140px)
+
+	// @for $i from 1 through $columns
+	// 	.col-xs-#{$i}
+	// 		+span($columns of $columns)
+	// 		+clearfix
+
+	// @for $i from 1 through $columns
+	// 	.col-sm-#{$i}
+	// 		+span($columns of $columns)
+	// 		+clearfix
+
+	// @for $i from 1 through $columns
+	// 	.col-md-#{$i}
+	// 		+span($columns of $columns)
+	// 		+clearfix
 
 	@for $i from 1 through $columns
 		.col-lg-#{$i}
