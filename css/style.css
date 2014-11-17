@@ -2838,7 +2838,7 @@ h2:before {
     content: ">960px 769px< "; } }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   h2:before {
-    content: ">1200px 961px> "; } }
+    content: ">1200px 961px< "; } }
 @media screen and (min-width: 1200px) {
   h2:before {
     content: "<1200px "; } }
