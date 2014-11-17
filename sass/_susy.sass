@@ -1,6 +1,3 @@
-@import compass
-@import ../bower_components/susy/sass/susy
-
 // $Variables Susy
 // -------------------------------------//
 // Extra small screen / phone
@@ -40,11 +37,6 @@ $shorthand: 12 1/4 fluid float inside
 
 // $ExtraSmall
 // -------------------------------------//
-
-h1#coltest
-	&:before
-		content: 'ExtraSmall '
-
 .container
 	+container(95%)
 	+clearfix
@@ -62,9 +54,6 @@ h1#coltest
 // $Small
 // -------------------------------------//
 @media screen and (min-width: $screen-xs-min) and (max-width: $screen-xs-max)
-	h1#coltest
-		&:before
-			content: 'Small '
 	.container
 		+container(95%)
 
@@ -81,9 +70,6 @@ h1#coltest
 // $Medium
 // -------------------------------------//
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
-	h1#coltest
-		&:before
-			content: 'Medium '
 	.container
 		+container(720px)
 
@@ -106,9 +92,6 @@ h1#coltest
 // $Large
 // -------------------------------------//
 @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max)
-	h1#coltest
-		&:before
-			content: 'Large '
 	.container
 		+container(960px)
 
@@ -131,9 +114,6 @@ h1#coltest
 // $ExtraLarge
 // -------------------------------------//
 @media screen and (min-width: $screen-lg-min)
-	h1#coltest
-		&:before
-			content: 'ExtraLarge '
 	.container
 		+container(1140px)
 
@@ -151,4 +131,8 @@ h1#coltest
 
 	@for $i from 1 through $columns
 		.col-lg-#{$i}
+			+span($i of $columns)
+
+	@for $i from 1 through $columns
+		.col-xl-#{$i}
 			+span($i of $columns)
