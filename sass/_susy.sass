@@ -42,18 +42,18 @@ $shorthand: 12 1/4 fluid float inside
 	+clearfix
 
 @for $i from 1 through $columns
-	.col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}
+	.col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}
 		+span($columns of $columns)
 		+clearfix
 
 @for $i from 1 through $columns
-	.pull-xs-#{$i}
+	.pull-xxs-#{$i}
 		+pull($i of $columns)
-	.pre-xs-#{$i}
+	.pre-xxs-#{$i}
 		+pre($i of $columns)
-	.post-xs-#{$i}
+	.post-xxs-#{$i}
 		+post($i of $columns)
-	.col-xs-#{$i}
+	.col-xxs-#{$i}
 		+span($i of $columns)
 
 
@@ -64,21 +64,21 @@ $shorthand: 12 1/4 fluid float inside
 		+container(95%)
 
 	@for $i from 1 through $columns
-		.pull-xs-#{$i}
+		.pull-xxs-#{$i}
 			+pull($i of $columns)
+		.pre-xxs-#{$i}
+			+pre($i of $columns)
+		.post-xxs-#{$i}
+			+post($i of $columns)
+		.col-xxs-#{$i}
+			+span($i of $columns)
+
+	@for $i from 1 through $columns
 		.pre-xs-#{$i}
 			+pre($i of $columns)
 		.post-xs-#{$i}
 			+post($i of $columns)
 		.col-xs-#{$i}
-			+span($i of $columns)
-
-	@for $i from 1 through $columns
-		.pre-sm-#{$i}
-			+pre($i of $columns)
-		.post-sm-#{$i}
-			+post($i of $columns)
-		.col-sm-#{$i}
 			+span($i of $columns)
 
 
@@ -88,6 +88,16 @@ $shorthand: 12 1/4 fluid float inside
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
 	.container
 		+container(720px)
+
+	@for $i from 1 through $columns
+		.pull-xxs-#{$i}
+			+pull($i of $columns)
+		.pre-xxs-#{$i}
+			+pre($i of $columns)
+		.post-xxs-#{$i}
+			+post($i of $columns)
+		.col-xxs-#{$i}
+			+span($i of $columns)
 
 	@for $i from 1 through $columns
 		.pull-xs-#{$i}
@@ -107,16 +117,6 @@ $shorthand: 12 1/4 fluid float inside
 		.post-sm-#{$i}
 			+post($i of $columns)
 		.col-sm-#{$i}
-			+span($i of $columns)
-
-	@for $i from 1 through $columns
-		.pull-md-#{$i}
-			+pull($i of $columns)
-		.pre-md-#{$i}
-			+pre($i of $columns)
-		.post-md-#{$i}
-			+post($i of $columns)
-		.col-md-#{$i}
 			+span($i of $columns)
 
 
@@ -130,6 +130,16 @@ $shorthand: 12 1/4 fluid float inside
 		+container(960px)
 
 	@for $i from 1 through $columns
+		.pull-xxs-#{$i}
+			+pull($i of $columns)
+		.pre-xxs-#{$i}
+			+pre($i of $columns)
+		.post-xxs-#{$i}
+			+post($i of $columns)
+		.col-xxs-#{$i}
+			+span($i of $columns)
+
+	@for $i from 1 through $columns
 		.pull-xs-#{$i}
 			+pull($i of $columns)
 		.pre-xs-#{$i}
@@ -157,16 +167,6 @@ $shorthand: 12 1/4 fluid float inside
 		.post-md-#{$i}
 			+post($i of $columns)
 		.col-md-#{$i}
-			+span($i of $columns)
-
-	@for $i from 1 through $columns
-		.pull-lg-#{$i}
-			+pull($i of $columns)
-		.pre-lg-#{$i}
-			+pre($i of $columns)
-		.post-lg-#{$i}
-			+post($i of $columns)
-		.col-lg-#{$i}
 			+span($i of $columns)
 
 // $ExtraLarge
@@ -176,6 +176,16 @@ $shorthand: 12 1/4 fluid float inside
 		+container(1140px)
 
 	@for $i from 1 through $columns
+		.pull-xxs-#{$i}
+			+pull($i of $columns)
+		.pre-xxs-#{$i}
+			+pre($i of $columns)
+		.post-xxs-#{$i}
+			+post($i of $columns)
+		.col-xxs-#{$i}
+			+span($i of $columns)
+
+	@for $i from 1 through $columns
 		.pull-xs-#{$i}
 			+pull($i of $columns)
 		.pre-xs-#{$i}
@@ -213,14 +223,4 @@ $shorthand: 12 1/4 fluid float inside
 		.post-lg-#{$i}
 			+post($i of $columns)
 		.col-lg-#{$i}
-			+span($i of $columns)
-
-	@for $i from 1 through $columns
-		.pull-xl-#{$i}
-			+pull($i of $columns)
-		.pre-xl-#{$i}
-			+pre($i of $columns)
-		.post-xl-#{$i}
-			+post($i of $columns)
-		.col-xl-#{$i}
 			+span($i of $columns)
