@@ -2819,37 +2819,13 @@ div[class^=col-] {
   box-shadow: inset 0 0 0px 1px #fff, inset 0 0 0px 3px #d5ad0c;
   background: #f1c40f;
   color: #fff;
-  text-shadow: 1px 0 1px #aa8a0a;
-  padding: 10px; }
+  text-shadow: 1px 0 1px #aa8a0a; }
 
-head {
+span {
   display: block;
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  z-index: 999;
-  color: #333;
-  background: rgba(255, 255, 255, 0.25); }
-head:before {
-  content: "|||";
-  display: block;
-  padding: 5px 10px;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: bold; }
-head:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: red; }
-head:hover ~ body, head:hover ~ body body {
-  position: relative; }
-  head:hover ~ body:before, head:hover ~ body body:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    z-index: 998; }
+  padding: 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff; }
 
 h2:before {
   content: "Extra small "; }
