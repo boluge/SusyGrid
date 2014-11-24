@@ -3,43 +3,170 @@
 @import susy
 
 $color: #f1c40f
-$text: #fff
+$text: #2c3e50
+$titre: #3498db
+$bgtitre: #3498db
+$link: #2980b9
+$bg: #efefef
+$blanc: #fff
+$effettitre: darken($bg,10)
 
-*
-	font-family: Arial, Helvetica, sans-serif
+$triangle: 8px
+	
+body
+	margin: 0
+	padding: 0
+	font-family: 'Lato', sans-serif
+	background: $bg
 
-div[class^= col-]
-	+box-shadow( inset 0 0 0px 1px #fff, inset 0 0 0px 3px darken($color,6) )
-	background: $color
-	color: $text
-	+text-shadow(1px 0 1px darken($color,15))
 
-span
-	display: block
-	padding: 10px
-	border-left: 1px solid #fff
-	border-right: 1px solid #fff
+a
+	color: $link
+
+
+h1
+	color: $blanc
+	text-align: center
+	font-size: 80px
+	margin-top: 160px
+	+text-shadow(1px 1px 2px rgba(0, 0, 0, 0.5))
 
 h2
+	color: $blanc
+	text-align: center
+	font-size: 70px
+	line-height: 550px
+	margin-top: 0px
+	+text-shadow(1px 1px 2px rgba(0, 0, 0, 0.5))
+	&.size
+		text-align: center	
+		font-size: 24px
+		line-height: 24px
+		margin-top: 0px
+		+text-shadow(1px 1px 2px rgba(0, 0, 0, 0.5))		
+
+
+section.content
+	h3
+		background: lighten($bg,2)
+		color: darken($effettitre,14)
+		font-weight: 300
+		padding: 5px 15px
+		border-left: 1px solid $effettitre
+		position: relative
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			height: 0
+			width: 0
+			left: 0
+			top: 50%
+			margin-top: -6px
+			z-index: 70
+			border-style: solid
+			border-width: $triangle 0 $triangle $triangle
+			border-color: transparent transparent transparent $effettitre
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			height: 0
+			width: 0
+			left: -2px
+			top: 50%
+			z-index: 80
+			margin-top: -6px
+			border-style: solid
+			border-width: $triangle 0 $triangle $triangle
+			border-color: transparent transparent transparent $bg
+	
+
+section.content
+	position: relative
+	z-index: 20
+	background: $bg
+	color: $text
+	padding-bottom: 10px
+	&:before
+		content: ''
+		width: 100%
+		height: 40px
+		position: absolute
+		z-index: 10
+		background: $bg
+		+transform(skew(0deg, -1.5deg))
+		top: -20px
+	&:after
+		content: ''
+		width: 100%
+		height: 40px
+		position: absolute
+		z-index: 10
+		background: $bg
+		+transform(skew(0deg, -1.5deg))
+		bottom: -20px
+
+
+div.demo
+	+box-shadow( inset 0 0 0px 1px $bg, inset 0 0 0px 2px darken($color,4) )
+	background: $color
+	color: $blanc
+	+text-shadow(1px 0 1px darken($color,15))
+	span.padd
+		padding: 10px
+		display: block
+
+pre
+	+box-shadow(0 2px 2px rgba(0,0,0,0.05))
+	+border-radius(4px)
+	
+	
+div[class^= header-]
+	+background-size(cover)
+
+	
+.container
+	position: relative
+	z-index: 40
+
+
+.header-grille
+	background: url( '../img/grid.jpg' ) no-repeat center center fixed
+	height: 550px
+	padding-bottom: 10px
+	h2
+		text-align: center
+
+.header-config
+	background: url( '../img/parameters.jpg' ) no-repeat center center fixed
+
+
+.header-class
+	background: url( '../img/tools.jpg' ) no-repeat center center fixed
+
+
+
+h2.size
 	&:before
 		content: '>480px '
 
 @media screen and (min-width: $screen-xs-min) and (max-width: $screen-xs-max)
-	h2
+	h2.size
 		&:before
 			content: '>768px 481px< '
 
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
-	h2
+	h2.size
 		&:before
 			content: '>960px 769px< '
 
 @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max)
-	h2
+	h2.size
 		&:before
 			content: '>1200px 961px< '
 
 @media screen and (min-width: $screen-lg-min)
-	h2
+	h2.size
 		&:before
 			content: '<1200px '

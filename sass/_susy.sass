@@ -41,19 +41,24 @@ $shorthand: 12 1/4 fluid float inside
 	+container(95%)
 	+clearfix
 
+.clearfix
+	+clearfix
+	display: block
+	width: 100%
+
 @for $i from 1 through $columns
 	.col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}
 		+span($columns of $columns)
 		+clearfix
 
 @for $i from 1 through $columns
-	.pull-xxs-#{$i}
+	.pull-#{$i}
 		+pull($i of $columns)
-	.pre-xxs-#{$i}
+	.pre-#{$i}
 		+pre($i of $columns)
-	.post-xxs-#{$i}
+	.post-#{$i}
 		+post($i of $columns)
-	.col-xxs-#{$i}
+	.col-#{$i}
 		+span($i of $columns)
 
 
@@ -64,13 +69,13 @@ $shorthand: 12 1/4 fluid float inside
 		+container(95%)
 
 	@for $i from 1 through $columns
-		.pull-xxs-#{$i}
+		.pull-#{$i}
 			+pull($i of $columns)
-		.pre-xxs-#{$i}
+		.pre-#{$i}
 			+pre($i of $columns)
-		.post-xxs-#{$i}
+		.post-#{$i}
 			+post($i of $columns)
-		.col-xxs-#{$i}
+		.col-#{$i}
 			+span($i of $columns)
 
 	@for $i from 1 through $columns
@@ -90,13 +95,13 @@ $shorthand: 12 1/4 fluid float inside
 		+container(720px)
 
 	@for $i from 1 through $columns
-		.pull-xxs-#{$i}
+		.pull-#{$i}
 			+pull($i of $columns)
-		.pre-xxs-#{$i}
+		.pre-#{$i}
 			+pre($i of $columns)
-		.post-xxs-#{$i}
+		.post-#{$i}
 			+post($i of $columns)
-		.col-xxs-#{$i}
+		.col-#{$i}
 			+span($i of $columns)
 
 	@for $i from 1 through $columns
@@ -130,13 +135,13 @@ $shorthand: 12 1/4 fluid float inside
 		+container(960px)
 
 	@for $i from 1 through $columns
-		.pull-xxs-#{$i}
+		.pull-#{$i}
 			+pull($i of $columns)
-		.pre-xxs-#{$i}
+		.pre-#{$i}
 			+pre($i of $columns)
-		.post-xxs-#{$i}
+		.post-#{$i}
 			+post($i of $columns)
-		.col-xxs-#{$i}
+		.col-#{$i}
 			+span($i of $columns)
 
 	@for $i from 1 through $columns
@@ -176,13 +181,13 @@ $shorthand: 12 1/4 fluid float inside
 		+container(1140px)
 
 	@for $i from 1 through $columns
-		.pull-xxs-#{$i}
+		.pull-#{$i}
 			+pull($i of $columns)
-		.pre-xxs-#{$i}
+		.pre-#{$i}
 			+pre($i of $columns)
-		.post-xxs-#{$i}
+		.post-#{$i}
 			+post($i of $columns)
-		.col-xxs-#{$i}
+		.col-#{$i}
 			+span($i of $columns)
 
 	@for $i from 1 through $columns
