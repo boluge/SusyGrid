@@ -31,7 +31,7 @@
 &lt;div class="container">
 
 	&lt;!-- Class col-md-xx -->
-	&lt;div class="col-md-6">... &lt;/div>
+	&lt;div class="col-md-6">...&lt;/div>
 	&lt;div class="col-md-6">...&lt;/div>
 	
 	&lt;!-- Class clearfix -->
@@ -94,7 +94,42 @@
 	</div>
 	<section class="content">
 		<div class="container">
-			<p>Mettre ici les différentes classes presentes dans la grille comme hidden, visible, clearfix, pull ...</p>
+			<h3>Class Visible</h3>
+			<div class="col-md-6">
+				<pre><code class="hljs html">&lt;!-- Class Visible -->
+&lt;div class="visible-block-xx">...&lt;/div>
+&lt;div class="visible-flex-xx">...&lt;/div>
+&lt;div class="visible-inherit-xx">...&lt;/div>
+&lt;div class="visible-inline-xx">...&lt;/div>
+&lt;div class="visible-inline-block-xx">...&lt;/div>
+&lt;div class="visible-table-xx">...&lt;/div></code></pre>
+			</div>
+			<div class="col-md-6">
+				<p>Il existe plusieurs class visible en fonction de la valeur de la propriété <b>display</b> souhaité.</p>
+				<p>Vous trouverez toutes les information sur le site <a href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">w3schools.com</a>.</p>
+			</div>
+			<div class="clearfix"></div>
+			<h3>Class Hidden</h3>
+			<div class="col-md-6">
+				<p>Ces class permettent de masquer des élément en fonction de la taille de l'écran.</p>
+				<p>Cette class est cumulable, un élément peut être masquer sur plusieur tailles d'écran.</p>
+			</div>
+			<div class="col-md-6">
+				<pre><code class="hljs html">&lt;!-- Class Hidden -->
+&lt;div class="hidden-xxs">&lt;/div>
+&lt;div class="hidden-xs">&lt;/div>
+&lt;div class="hidden-sm">&lt;/div>
+&lt;div class="hidden-md">&lt;/div>
+&lt;div class="hidden-lg">&lt;/div></code></pre>
+			</div>
+			<div class="clearfix"></div>
+			<div>
+				<div class="hidden-xxs">Hidden-xxs</div>
+				<div class="hidden-xs">Hidden-xs</div>
+				<div class="hidden-sm">Hidden-sm</div>
+				<div class="hidden-md">Hidden-md</div>
+				<div class="hidden-lg">Hidden-lg</div>
+			</div>
 		</div>
 	</section>
 	<div id="header-config" class="header-config">
