@@ -3,6 +3,10 @@ SusyGrid
 
 SusyGrid est un grille RWD en sass. Cette grille est mobile first. Elle est par defaut découpé en 12 colonnes, il est possible de choisir sa largeur, le nombre de colonnes, mais aussi la largeur de la goutière. 
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=RFinNxS5KN4
+" target="_blank"><img src="http://img.youtube.com/vi/RFinNxS5KN4/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ##Media Query
 ```sass
 @media screen and (max-width: $screen-xs-min)
