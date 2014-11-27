@@ -3,6 +3,8 @@
 @import susy
 
 $color: #f1c40f
+$ok: #2ecc71
+$bad: #e74c3c
 $text: #2c3e50
 $titre: #3498db
 $bgtitre: #3498db
@@ -13,6 +15,8 @@ $effettitre: darken($bg,10)
 $dark: #333
 
 $triangle: 8px
+
+
 
 body
 	margin: 0
@@ -111,7 +115,25 @@ section.content.dark
 	background: $dark
 	&:before, &:after
 		background: $dark
-
+.testview
+	+box-shadow( inset 0 0 0px 1px $bg, inset 0 0 0px 2px darken($bad,4) )
+	background: $bad
+	color: $blanc
+	+text-shadow(1px 0 1px darken($bad,15))
+	text-align: center
+	span.padd
+		padding: 10px
+		display: block
+.testhide
+	+box-shadow( inset 0 0 0px 1px $bg, inset 0 0 0px 2px darken($ok,4) )
+	background: $ok
+	color: $blanc
+	+text-shadow(1px 0 1px darken($ok,15))
+	text-align: center
+	span.padd
+		padding: 10px
+		display: block
+      
 div.demo
 	+box-shadow( inset 0 0 0px 1px $bg, inset 0 0 0px 2px darken($color,4) )
 	background: $color

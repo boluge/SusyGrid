@@ -42,11 +42,24 @@ $shorthand: 12 1/4 fluid float inside
 .container
 	+container(95%)
 	+clearfix
+.container-fluid
+	+container(100%)
+	+clearfix
 
-.clearfix
+.row	
+	display: block
+	width: 100%
+	&:after
+		content: ''
+		+clearfix
+		display: block
+		width: 100%
+
+.clearfix,
 	+clearfix
 	display: block
 	width: 100%
+	height: 1px
 
 // Class Hidden & Visible
 $sizes: -xs -sm -md -lg

@@ -26,24 +26,28 @@
 		<div class="container">
 			<p><b>SusyGrid</b> est un grille RWD en sass. Cette grille est <b>mobile first</b>. Elle est par defaut découpé en 12 colonnes, il est possible de choisir sa largeur, le nombre de colonnes, mais aussi la largeur de la goutière. Pour savoir comment porcéder, regardez le chapitre <a href="#configuration">Configuration</a></p>
 				<h3>L'utilisation</h3>
-			<div class="col-md-6">
-				<pre><code class="hljs html">&lt;!-- Classe Container -->
-&lt;div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<pre><code class="hljs html">&lt;!-- Classe Container -->
+   &lt;div class="container">
+      &lt;div class="row">
 
-	&lt;!-- Class col-md-xx -->
-	&lt;div class="col-md-6">...&lt;/div>
-	&lt;div class="col-md-6">...&lt;/div>
-	
-	&lt;!-- Class clearfix -->
-	&lt;div class="clearfix">&lt;/div>
-	
-	&lt;!-- Class pre & post -->
-	&lt;div class="pre-md-2 col-md-8 post-md-2">...&lt;/div>
-	
-&lt;/div></code></pre>
-			</div>
-			<div class="col-md-6">
-				<pre><code class="hljs html">&lt;!-- Taille d'une colonne sur smartphone -->
+         &lt;!-- Class col-md-xx -->
+         &lt;div class="col-md-6">...&lt;/div>
+         &lt;div class="col-md-6">...&lt;/div>
+
+      &lt;/div>
+   &lt;/div>
+   &lt;div class="container-fluid">
+      &lt;div class="row">
+         &lt;!-- Class pre & post -->
+         &lt;div class="pre-md-2 col-md-8 post-md-2">&lt;/div>
+      &lt;/div>
+
+   &lt;/div></code></pre>
+				</div>
+				<div class="col-md-6">
+					<pre><code class="hljs html">&lt;!-- Taille d'une colonne sur smartphone -->
 &lt;div class="col-6">...&lt;/div>
 
 &lt;!-- Taille d'une colonne sur phablette -->
@@ -56,34 +60,50 @@
 &lt;div class="grid-md-6">...&lt;/div>
 
 &lt;!-- Taille d'une colonne sur desktop -->
-&lt;div class="grid-lg-6">...&lt;/div></code></pre>
+&lt;div class="grid-lg-6">...&lt;/div>
+
+&lt;!-- Clearfix -->
+&lt;div class="clearfix">...&lt;/div></code></pre>
+				</div>
 			</div>
-			<div class="clearfix"></div>
 			<h3>Démonstration</h3>
-			<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
-			<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
-			<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
-			<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
-			<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
-			<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
+			<div class="row">
+				<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
+				<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
+				<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
+				<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
+				<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
+				<div class="demo col-md-2"><span class="padd">.col-md-2</span></div>
+			</div>
 
-			<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
-			<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
-			<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
-			<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
+			<div class="row">
+				<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
+				<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
+				<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
+				<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
+			</div>
 
-			<div class="demo col-md-4"><span class="padd">.col-md-4</span></div>
-			<div class="demo col-md-4"><span class="padd">.col-md-4</span></div>
-			<div class="demo col-md-4"><span class="padd">.col-md-4</span></div>
+			<div class="row">
+				<div class="demo col-md-4"><span class="padd">.col-md-4</span></div>
+				<div class="demo col-md-4"><span class="padd">.col-md-4</span></div>
+				<div class="demo col-md-4"><span class="padd">.col-md-4</span></div>
+			</div>
 
-			<div class="demo col-md-6"><span class="padd">.col-md-6</span></div>
-			<div class="demo col-md-6"><span class="padd">.col-md-6</span></div>
+			<div class="row">
+				<div class="demo col-md-6"><span class="padd">.col-md-6</span></div>
+				<div class="demo col-md-6"><span class="padd">.col-md-6</span></div>
+			</div>
 
-			<div class="demo col-md-8"><span class="padd">.col-md-8</span></div>
-			<div class="demo col-md-4"><span class="padd">.col-md-4</span></div>
-			<div class="demo col-md-8 pre-md-2 post-md-2"> <span class="padd">.pre-md-2.col-md-8.post-md-2</span></div>
-			<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
-			<div class="demo col-md-10 pull-md-1"><span class="padd">.col-md-10.pull-md-1</span></div>
+			<div class="row">
+				<div class="demo col-md-8"><span class="padd">.col-md-8</span></div>
+				<div class="demo col-md-4"><span class="padd">.col-md-4</span></div>
+				<div class="demo col-md-8 pre-md-2 post-md-2"> <span class="padd">.pre-md-2.col-md-8.post-md-2</span></div>
+			</div>
+			
+			<div class="row">
+				<div class="demo col-md-3"><span class="padd">.col-md-3</span></div>
+				<div class="demo col-md-10 pull-md-1"><span class="padd">.col-md-10.pull-md-1</span></div>
+			</div>
 
 		</div>
 	</section>
@@ -95,41 +115,54 @@
 	<section class="content">
 		<div class="container">
 			<h3>Class Visible</h3>
-			<div class="col-md-6">
-				<pre><code class="hljs html">&lt;!-- Class Visible -->
-&lt;div class="visible-xx">...&lt;/div>
-&lt;div class="visible-xx-block">...&lt;/div>
-&lt;div class="visible-xx-flex">...&lt;/div>
-&lt;div class="visible-xx-inherit">...&lt;/div>
-&lt;div class="visible-xx-inline">...&lt;/div>
-&lt;div class="visible-xx-inline-block">...&lt;/div>
-&lt;div class="visible-xx-table">...&lt;/div></code></pre>
+			<div class="row">
+				<div class="col-md-6">
+					<pre><code class="hljs html">&lt;!-- Class Visible -->
+	&lt;div class="visible-xx">...&lt;/div>
+	&lt;div class="visible-xx-block">...&lt;/div>
+	&lt;div class="visible-xx-flex">...&lt;/div>
+	&lt;div class="visible-xx-inherit">...&lt;/div>
+	&lt;div class="visible-xx-inline">...&lt;/div>
+	&lt;div class="visible-xx-inline-block">...&lt;/div>
+	&lt;div class="visible-xx-table">...&lt;/div></code></pre>
+				</div>
+				<div class="col-md-6">
+					<p>Il existe plusieurs class visible en fonction de la valeur de la propriété <b>display</b> souhaité.</p>
+					<p>Vous trouverez toutes les information sur le site <a href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">w3schools.com</a>.</p>
+					<div class="testhide visible-xxs"><span class="padd">visible-xxs</span></div>
+					<div class="testhide visible-xs"><span class="padd">visible-xs</span></div>
+					<div class="testhide visible-sm"><span class="padd">visible-sm</span></div>
+					<div class="testhide visible-md"><span class="padd">visible-md</span></div>
+					<div class="testhide visible-lg"><span class="padd">visible-lg</span></div>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<p>Il existe plusieurs class visible en fonction de la valeur de la propriété <b>display</b> souhaité.</p>
-				<p>Vous trouverez toutes les information sur le site <a href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">w3schools.com</a>.</p>
-			</div>
-			<div class="clearfix"></div>
 			<h3>Class Hidden</h3>
-			<div class="col-md-6">
-				<p>Ces class permettent de masquer des élément en fonction de la taille de l'écran.</p>
-				<p>Cette class est cumulable, un élément peut être masquer sur plusieur tailles d'écran.</p>
+			<div class="row">
+				<div class="col-md-6">
+					<p>Ces class permettent de masquer des élément en fonction de la taille de l'écran.</p>
+					<p>Cette class est cumulable, un élément peut être masquer sur plusieur tailles d'écran.</p>
+				</div>
+				<div class="col-md-6">
+					<pre><code class="hljs html">&lt;!-- Class Hidden -->
+	&lt;div class="hidden-xxs">&lt;/div>
+	&lt;div class="hidden-xs">&lt;/div>
+	&lt;div class="hidden-sm">&lt;/div>
+	&lt;div class="hidden-md">&lt;/div>
+	&lt;div class="hidden-lg">&lt;/div></code></pre>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<pre><code class="hljs html">&lt;!-- Class Hidden -->
-&lt;div class="hidden-xxs">&lt;/div>
-&lt;div class="hidden-xs">&lt;/div>
-&lt;div class="hidden-sm">&lt;/div>
-&lt;div class="hidden-md">&lt;/div>
-&lt;div class="hidden-lg">&lt;/div></code></pre>
-			</div>
-			<div class="clearfix"></div>
-			<div>
-				<div class="hidden-xxs">Hidden-xxs</div>
-				<div class="hidden-xs">Hidden-xs</div>
-				<div class="hidden-sm">Hidden-sm</div>
-				<div class="hidden-md">Hidden-md</div>
-				<div class="hidden-lg">Hidden-lg</div>
+			<div class="row">
+				<div class="col-md-3 testhide hidden-xxs"><span class="padd">Hidden-xxs</span></div>
+				<div class="col-md-3 testhide hidden-xs"><span class="padd">Hidden-xs</span></div>
+				<div class="col-md-3 testhide hidden-sm"><span class="padd">Hidden-sm</span></div>
+				<div class="col-md-3 testhide hidden-md"><span class="padd">Hidden-md</span></div>
+				<div class="col-md-3 testhide hidden-lg"><span class="padd">Hidden-lg</span></div>
+				
+				<div class="col-md-12 testview visible-xxs"><span class="padd">Hidden-xxs</span></div>
+				<div class="col-md-12 testview visible-xs"><span class="padd">Hidden-xs</span></div>
+				<div class="col-md-12 testview visible-sm"><span class="padd">Hidden-sm</span></div>
+				<div class="col-md-12 testview visible-md"><span class="padd">Hidden-md</span></div>
+				<div class="col-md-12 testview visible-lg"><span class="padd">Hidden-lg</span></div>
 			</div>
 		</div>
 	</section>
@@ -141,10 +174,11 @@
 	<section class="content">
 		<div class="container">
 			<h3>Les Variables</h3>
-			<div class="col-md-6">	
-				<p>Vous pouvez personnaliser la grille en définissant les valeurs que vous souhaitez auxles variables ci contre, avant d'importer <b>_susy.sass</b></p></div>
-			<div class="col-md-6">
-				<pre><code class="hljs sass">$screen-xs: 480px
+			<div class="row">
+				<div class="col-md-6">	
+					<p>Vous pouvez personnaliser la grille en définissant les valeurs que vous souhaitez auxles variables ci contre, avant d'importer <b>_susy.sass</b></p></div>
+				<div class="col-md-6">
+					<pre><code class="hljs sass">$screen-xs: 480px
 $screen-sm: 768px
 $screen-md: 992px
 $screen-lg: 1200px
@@ -160,7 +194,9 @@ $susy: (
   global-box-sizing: border-box,
   use-custom: (rem: true)
 )</code></pre>
+				</div>
 			</div>
+
 		</div>
 	</section>
 	<script>

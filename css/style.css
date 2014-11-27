@@ -14,11 +14,33 @@
     display: block;
     clear: both; }
 
+.container-fluid {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  *zoom: 1; }
+  .container-fluid:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.row {
+  display: block;
+  width: 100%; }
+  .row:after {
+    content: "";
+    overflow: hidden;
+    *zoom: 1;
+    display: block;
+    width: 100%; }
+
 .clearfix {
   overflow: hidden;
   *zoom: 1;
   display: block;
-  width: 100%; }
+  width: 100%;
+  height: 1px; }
 
 .hidden-xxs {
   display: none; }
@@ -3460,6 +3482,30 @@ section.content.dark {
   background: #333; }
   section.content.dark:before, section.content.dark:after {
     background: #333; }
+
+.testview {
+  -moz-box-shadow: inset 0 0 0px 1px #efefef, inset 0 0 0px 2px #e53b2a;
+  -webkit-box-shadow: inset 0 0 0px 1px #efefef, inset 0 0 0px 2px #e53b2a;
+  box-shadow: inset 0 0 0px 1px #efefef, inset 0 0 0px 2px #e53b2a;
+  background: #e74c3c;
+  color: #fff;
+  text-shadow: 1px 0 1px #bf2718;
+  text-align: center; }
+  .testview span.padd {
+    padding: 10px;
+    display: block; }
+
+.testhide {
+  -moz-box-shadow: inset 0 0 0px 1px #efefef, inset 0 0 0px 2px #2abb68;
+  -webkit-box-shadow: inset 0 0 0px 1px #efefef, inset 0 0 0px 2px #2abb68;
+  box-shadow: inset 0 0 0px 1px #efefef, inset 0 0 0px 2px #2abb68;
+  background: #2ecc71;
+  color: #fff;
+  text-shadow: 1px 0 1px #208e4e;
+  text-align: center; }
+  .testhide span.padd {
+    padding: 10px;
+    display: block; }
 
 div.demo {
   -moz-box-shadow: inset 0 0 0px 1px #efefef, inset 0 0 0px 2px #dfb50d;
