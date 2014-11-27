@@ -1,7 +1,7 @@
 SusyGrid
 ========
 
-just a good ***responsive Grid*** create with Susy 2
+SusyGrid est un grille RWD en sass. Cette grille est mobile first. Elle est par defaut découpé en 12 colonnes, il est possible de choisir sa largeur, le nombre de colonnes, mais aussi la largeur de la goutière. 
 
 **Media Query**
 ```sass
@@ -12,6 +12,7 @@ just a good ***responsive Grid*** create with Susy 2
 ```
 
 **Diferent size screen**
+
 ```html
 <!-- .container & .container-fluid -->
 <div class="container">...</div>
@@ -37,6 +38,8 @@ just a good ***responsive Grid*** create with Susy 2
 ```
 
 **Class Visible**
+Il existe plusieurs class visible en fonction de la valeur de la propriété display souhaité.
+Vous trouverez toutes les information sur le site w3schools.com.
 ```html
 <!-- Class Visible -->
 <div class="visible-xx">...</div>
@@ -49,6 +52,8 @@ just a good ***responsive Grid*** create with Susy 2
 ```
 
 **Class Hidden**
+Ces class permettent de masquer des élément en fonction de la taille de l'écran.
+Cette class est cumulable, un élément peut être masquer sur plusieur tailles d'écran.
 ```html
 <!-- Class Hidden -->
 <div class="hidden-xxs"></div>
@@ -58,6 +63,7 @@ just a good ***responsive Grid*** create with Susy 2
 <div class="hidden-lg"></div>
 ```
 **Configuration SusyGrid**
+Vous pouvez personnaliser la grille en définissant les valeurs que vous souhaitez auxles variables ci contre, avant d'importer _susy.sass
 ```sass
 $screen-xs: 480px
 $screen-sm: 768px
