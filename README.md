@@ -3,7 +3,7 @@ SusyGrid
 
 SusyGrid est un grille RWD en sass. Cette grille est mobile first. Elle est par defaut découpé en 12 colonnes, il est possible de choisir sa largeur, le nombre de colonnes, mais aussi la largeur de la goutière. 
 
-**Media Query**
+##Media Query
 ```sass
 @media screen and (max-width: $screen-xs-min)
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
@@ -11,7 +11,7 @@ SusyGrid est un grille RWD en sass. Cette grille est mobile first. Elle est par 
 @media screen and (min-width: $screen-lg-min)
 ```
 
-**Diferent size screen**
+##Diferent size screen
 
 ```html
 <!-- .container & .container-fluid -->
@@ -37,7 +37,7 @@ SusyGrid est un grille RWD en sass. Cette grille est mobile first. Elle est par 
 <div class="clearfix">...</div>
 ```
 
-**Class Visible**
+##Class Visible
 Il existe plusieurs class visible en fonction de la valeur de la propriété display souhaité.
 Vous trouverez toutes les information sur le site w3schools.com.
 ```html
@@ -51,7 +51,7 @@ Vous trouverez toutes les information sur le site w3schools.com.
 <div class="visible-xx-table">...</div>
 ```
 
-**Class Hidden**
+##Class Hidden
 Ces class permettent de masquer des élément en fonction de la taille de l'écran.
 Cette class est cumulable, un élément peut être masquer sur plusieur tailles d'écran.
 ```html
@@ -62,7 +62,7 @@ Cette class est cumulable, un élément peut être masquer sur plusieur tailles 
 <div class="hidden-md"></div>
 <div class="hidden-lg"></div>
 ```
-**Configuration SusyGrid**
+##Configuration SusyGrid
 Vous pouvez personnaliser la grille en définissant les valeurs que vous souhaitez auxles variables ci contre, avant d'importer _susy.sass
 ```sass
 $screen-xs: 480px
