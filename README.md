@@ -14,8 +14,8 @@ just a good ***responsive Grid*** create with Susy 2
 **Diferent size screen**
 ```html
 <!-- .container & .container-fluid -->
-<div class="container"></div>
-<div class="container-fluid"></div>
+<div class="container">...</div>
+<div class="container-fluid">...</div>
 
 <!-- Taille d'une colonne sur smartphone -->
 <div class="col-6">...</div>
@@ -56,4 +56,23 @@ just a good ***responsive Grid*** create with Susy 2
 <div class="hidden-sm"></div>
 <div class="hidden-md"></div>
 <div class="hidden-lg"></div>
+```
+**Configuration SusyGrid**
+```sass
+$screen-xs: 480px
+$screen-sm: 768px
+$screen-md: 992px
+$screen-lg: 1200px
+		
+$columns:  12
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  global-box-sizing: border-box,
+  use-custom: (rem: true)
+)
 ```
