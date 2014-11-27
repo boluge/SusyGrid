@@ -1,7 +1,7 @@
 SusyGrid
 ========
 
-SusyGrid est un grille RWD en sass. Cette grille est mobile first. Elle est par defaut découpé en 12 colonnes, il est possible de choisir sa largeur, le nombre de colonnes, mais aussi la largeur de la goutière. 
+***SusyGrid*** est un grille RWD en ***sass***. Cette grille est mobile first. Elle est par defaut découpé en 12 colonnes, il est possible de choisir sa largeur, le nombre de colonnes, mais aussi la largeur des goutières. 
 
 
 ##Media Query
@@ -39,8 +39,8 @@ SusyGrid est un grille RWD en sass. Cette grille est mobile first. Elle est par 
 ```
 
 ##Class Visible
-Il existe plusieurs class visible en fonction de la valeur de la propriété display souhaité.
-Vous trouverez toutes les information sur le site w3schools.com.
+Il existe plusieurs class ***visible*** en fonction de la valeur de la propriété ***display*** souhaité.
+Vous trouverez toutes les information sur le site [w3schools.com](www.w3schools.com).
 ``` html
 <!-- Class Visible -->
 <div class="visible-xx">...</div>
@@ -64,7 +64,7 @@ Cette class est cumulable, un élément peut être masquer sur plusieur tailles 
 <div class="hidden-lg"></div>
 ```
 ##Configuration SusyGrid
-Vous pouvez personnaliser la grille en définissant les valeurs que vous souhaitez auxles variables ci contre, avant d'importer _susy.sass
+Vous pouvez personnaliser la grille en définissant les valeurs que vous souhaitez auxles variables ci contre, avant d'importer ***_susy.sass***.
 ``` sass
 $screen-xs: 480px
 $screen-sm: 768px
