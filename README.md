@@ -40,7 +40,7 @@ SusyGrid
 
 ##Class Visible
 Il existe plusieurs class ***visible*** en fonction de la valeur de la propriété ***display*** souhaité.
-Vous trouverez toutes les information sur le site [w3schools.com](http://www.w3schools.com).
+Vous trouverez toutes les information sur le site [w3schools.com](http://www.w3schools.com/cssref/pr_class_display.asp).
 ``` html
 <!-- Class Visible -->
 <div class="visible-xx">...</div>
