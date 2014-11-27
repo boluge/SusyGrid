@@ -13,43 +13,47 @@ just a good ***responsive Grid*** create with Susy 2
 
 **Diferent size screen**
 ```html
-&lt;!-- Taille d'une colonne sur smartphone -->
-&lt;div class="col-6">...&lt;/div>
+<!-- .container & .container-fluid -->
+<div class="container"></div>
+<div class="container-fluid"></div>
 
-&lt;!-- Taille d'une colonne sur phablette -->
-&lt;div class="col-xs-6">...&lt;/div>
+<!-- Taille d'une colonne sur smartphone -->
+<div class="col-6">...</div>
 
-&lt;!-- Taille d'une colonne sur tablette -->
-&lt;div class="grid-sm-6">...&lt;/div>
+<!-- Taille d'une colonne sur phablette -->
+<div class="col-xs-6">...</div>
 
-&lt;!-- Taille d'une colonne sur laptop -->
-&lt;div class="grid-md-6">...&lt;/div>
+<!-- Taille d'une colonne sur tablette -->
+<div class="grid-sm-6">...</div>
 
-&lt;!-- Taille d'une colonne sur desktop -->
-&lt;div class="grid-lg-6">...&lt;/div>
+<!-- Taille d'une colonne sur laptop -->
+<div class="grid-md-6">...</div>
 
-&lt;!-- Clearfix -->
-&lt;div class="clearfix">...&lt;/div>
+<!-- Taille d'une colonne sur desktop -->
+<div class="grid-lg-6">...</div>
+
+<!-- Clearfix -->
+<div class="clearfix">...</div>
 ```
 
 **Class Visible**
 ```html
-&lt;!-- Class Visible -->
-&lt;div class="visible-xx">...&lt;/div>
-&lt;div class="visible-xx-block">...&lt;/div>
-&lt;div class="visible-xx-flex">...&lt;/div>
-&lt;div class="visible-xx-inherit">...&lt;/div>
-&lt;div class="visible-xx-inline">...&lt;/div>
-&lt;div class="visible-xx-inline-block">...&lt;/div>
-&lt;div class="visible-xx-table">...&lt;/div>
+<!-- Class Visible -->
+<div class="visible-xx">...</div>
+<div class="visible-xx-block">...</div>
+<div class="visible-xx-flex">...</div>
+<div class="visible-xx-inherit">...</div>
+<div class="visible-xx-inline">...</div>
+<div class="visible-xx-inline-block">...</div>
+<div class="visible-xx-table">...</div>
 ```
 
 **Class Hidden**
 ```html
-&lt;!-- Class Hidden -->
-&lt;div class="hidden-xxs">&lt;/div>
-&lt;div class="hidden-xs">&lt;/div>
-&lt;div class="hidden-sm">&lt;/div>
-&lt;div class="hidden-md">&lt;/div>
-&lt;div class="hidden-lg">&lt;/div>
+<!-- Class Hidden -->
+<div class="hidden-xxs"></div>
+<div class="hidden-xs"></div>
+<div class="hidden-sm"></div>
+<div class="hidden-md"></div>
+<div class="hidden-lg"></div>
 ```
