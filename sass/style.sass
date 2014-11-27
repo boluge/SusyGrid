@@ -10,6 +10,7 @@ $link: #2980b9
 $bg: #efefef
 $blanc: #fff
 $effettitre: darken($bg,10)
+$dark: #333
 
 $triangle: 8px
 
@@ -18,7 +19,6 @@ body
 	padding: 0
 	font-family: 'Lato', sans-serif
 	background: $bg
-
 
 a
 	color: $link
@@ -84,29 +84,33 @@ section.content
 
 section.content
 	position: relative
-	z-index: 20
+	z-index: 40
 	background: $bg
 	color: $text
 	padding-bottom: 10px
 	&:before
 		content: ''
 		width: 100%
-		height: 40px
+		height: 100px
 		position: absolute
 		z-index: 10
 		background: $bg
-		+transform(skew(0deg, -1.5deg))
-		top: -20px
+		+transform(skew(0deg, 2deg))
+		top: -50px
 	&:after
 		content: ''
 		width: 100%
-		height: 40px
+		height: 100px
 		position: absolute
 		z-index: 10
 		background: $bg
-		+transform(skew(0deg, -1.5deg))
-		bottom: -20px
+		+transform(skew(0deg, -2deg))
+		bottom: -50px
 
+section.content.dark
+	background: $dark
+	&:before, &:after
+		background: $dark
 
 div.demo
 	+box-shadow( inset 0 0 0px 1px $bg, inset 0 0 0px 2px darken($color,4) )

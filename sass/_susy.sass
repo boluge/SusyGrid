@@ -53,7 +53,7 @@ $sizes: -xs -sm -md -lg
 .hidden-xxs
 	display: none
 
-.visible-xxs-block
+.visible-xxs, .visible-xxs-block
 	display: block
 	
 .visible-xxs-flex
@@ -74,7 +74,7 @@ $sizes: -xs -sm -md -lg
 	.hidden#{$size}
 		display: block
 	
-	.visible#{$size}-block
+	.visible#{$size}, .visible#{$size}-block
 		display: none
 
 	.visible#{$size}-flex
@@ -120,7 +120,7 @@ $sizes: -xs -sm -md -lg
 	.hidden-xs
 		display: none
 
-	.visible-xs-block
+	.visible-xs, .visible-xs-block
 		display: block
 
 	.visible-xs-flex
@@ -142,7 +142,7 @@ $sizes: -xs -sm -md -lg
 	@each $size in $sizes
 		.hidden#{$size}
 			display: block
-		.visible#{$size}-block
+		.visible#{$size}, .visible#{$size}-block
 			display: none
 		.visible#{$size}-flex
 			display: none
@@ -185,7 +185,7 @@ $sizes: -xs -sm -md -lg
 	.hidden-sm
 		display: none
 
-	.visible-sm-block
+	.visible-sm, .visible-sm-block
 		display: block
 
 	.visible-sm-flex
@@ -207,7 +207,7 @@ $sizes: -xs -sm -md -lg
 	@each $size in $sizes
 		.hidden#{$size}
 			display: block
-		.visible#{$size}-block
+		.visible#{$size}, .visible#{$size}-block
 			display: none
 		.visible#{$size}-flex
 			display: none
@@ -264,7 +264,7 @@ $sizes: -xs -sm -md -lg
 	.hidden-md
 		display: none
 
-	.visible-md-block
+	.visible-md, .visible-md-block
 		display: block
 
 	.visible-md-flex
@@ -286,7 +286,7 @@ $sizes: -xs -sm -md -lg
 	@each $size in $sizes
 		.hidden#{$size}
 			display: block
-		.visible#{$size}-block
+		.visible#{$size}, .visible#{$size}-block
 			display: none
 		.visible#{$size}-flex
 			display: none
@@ -349,7 +349,7 @@ $sizes: -xs -sm -md -lg
 	.hidden-lg
 		display: none
 
-	.visible-lg-block
+	.visible-lg, .visible-lg-block
 		display: block
 
 	.visible-lg-flex
@@ -371,7 +371,7 @@ $sizes: -xs -sm -md -lg
 	@each $size in $sizes
 		.hidden#{$size}
 			display: block
-		.visible#{$size}-block
+		.visible#{$size}, .visible#{$size}-block
 			display: none
 		.visible#{$size}-flex
 			display: none
