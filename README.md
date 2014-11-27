@@ -3,12 +3,9 @@ SusyGrid
 
 SusyGrid est un grille RWD en sass. Cette grille est mobile first. Elle est par defaut découpé en 12 colonnes, il est possible de choisir sa largeur, le nombre de colonnes, mais aussi la largeur de la goutière. 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=RFinNxS5KN4
-" target="_blank"><img src="http://img.youtube.com/vi/RFinNxS5KN4/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ##Media Query
-```sass
+``` sass
 @media screen and (max-width: $screen-xs-min)
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
 @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max)
@@ -17,7 +14,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ##Diferent size screen
 
-```html
+``` html
 <!-- .container & .container-fluid -->
 <div class="container">...</div>
 <div class="container-fluid">...</div>
@@ -44,7 +41,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ##Class Visible
 Il existe plusieurs class visible en fonction de la valeur de la propriété display souhaité.
 Vous trouverez toutes les information sur le site w3schools.com.
-```html
+``` html
 <!-- Class Visible -->
 <div class="visible-xx">...</div>
 <div class="visible-xx-block">...</div>
@@ -58,7 +55,7 @@ Vous trouverez toutes les information sur le site w3schools.com.
 ##Class Hidden
 Ces class permettent de masquer des élément en fonction de la taille de l'écran.
 Cette class est cumulable, un élément peut être masquer sur plusieur tailles d'écran.
-```html
+``` html
 <!-- Class Hidden -->
 <div class="hidden-xxs"></div>
 <div class="hidden-xs"></div>
@@ -68,7 +65,7 @@ Cette class est cumulable, un élément peut être masquer sur plusieur tailles 
 ```
 ##Configuration SusyGrid
 Vous pouvez personnaliser la grille en définissant les valeurs que vous souhaitez auxles variables ci contre, avant d'importer _susy.sass
-```sass
+``` sass
 $screen-xs: 480px
 $screen-sm: 768px
 $screen-md: 992px
