@@ -11,6 +11,28 @@ SusyGrid
 @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max)
 @media screen and (min-width: $screen-lg-min)
 ```
+##Structure HTML
+
+``` html
+<!-- Classe Container -->
+<div class="container">
+	<div class="row">
+
+		<!-- Class col-md-xx -->
+		<div class="col-md-6">...</div>
+		<div class="col-md-6">...</div>
+
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+	
+		<!-- Class pre & post -->
+		<div class="pre-md-2 col-md-8 post-md-2"></div>
+		
+	</div>
+</div>
+```
 
 ##Diferent size screen
 
